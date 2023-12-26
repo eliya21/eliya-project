@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfile.css">
+
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+   <div id="instructions">
+    <div> 
+        <h1>Tic-Tac-Toe</h1> 
+    </div>
+    
+    <h2> Game Instructions:</h2>
+    <p></p>
+    <h3>The goal of each player is to create three marks (X or circle) that are on one row, one column or one diagonal.</h3>
+    <p></p>
+    <h2>the progress of the game:</h2>
+    <p></p>
+    <h3>There are two players, each player chooses a sign, X or O - X starts the game. The first player places his token somewhere on the board. After that, the other player places his mark and repeats until one of the players creates a sequence of three of his symbols in one row, one column or one diagonal and thus he wins or until the entire board is filled and none of the players was able to create a sequence, in which case the result of the game is a draw</h3>
+</div>
+    <div id="board" >
+        <div class="cell" onclick="handleCellClick(0)"></div>
+        <div class="cell" onclick="handleCellClick(1)"></div>
+        <div class="cell" onclick="handleCellClick(2)"></div>
+        <div class="cell" onclick="handleCellClick(3)"></div>
+        <div class="cell" onclick="handleCellClick(4)"></div>
+        <div class="cell" onclick="handleCellClick(5)"></div>
+        <div class="cell" onclick="handleCellClick(6)"></div>
+        <div class="cell" onclick="handleCellClick(7)"></div>
+        <div class="cell" onclick="handleCellClick(8)"></div>
+    </div>
+    <p></p>
+    <input type="button" onclick="reastart()" value='Start again' />
+    <script src="javascript.js"></script>
+</body>
+</html>

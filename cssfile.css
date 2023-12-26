@@ -1,0 +1,48 @@
+body {/*
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    text-align: right;
+    height: 100vh;
+    margin: 0;
+}
+
+#instructions {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+background-color: lightcyan;
+}
+
+#board {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.X-bg{
+    background-color: crimson;
+}
+
+.O-bg{
+    background-color: blue
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
